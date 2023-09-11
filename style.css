@@ -63,6 +63,7 @@ body {
 
 .header {
     padding-left: 30px;
+    padding-right: 30px;
     grid-row: 1 / 2;
     background-color: white;
     display: flex;
@@ -74,14 +75,45 @@ body {
 .firstrow,
 .secondrow {
     display: flex;
+    justify-content: space-between;
+}
+
+.firstpart,
+.secondpart {
+    display: flex;
     gap: 20px;
 }
 
 .searchbar {
     background-color: #e1e8f0;
     height: 24px;
-    width: 500px;
+    width: 600px;
     border-radius: 10px;
+}
+
+.firstline{
+    font-size: 15px;
+}
+.secondline {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.buttons {
+    width: 350px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    background-color: #1892d4;
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 20px;
 }
 
 .material-symbols-outlined {
